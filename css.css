@@ -10,7 +10,7 @@ body {
 }
 
 #head {
-  background-color: crimson;
+  background-color: purple;
   font-family: "Alumni Sans Inline One", cursive;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,7 +24,7 @@ body {
 }
 
 .home {
-  background-color: rgba(220, 20, 60, 0.514);
+  background-color: rgba(128, 0, 128, 0.5);
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,9 +38,9 @@ body {
 #d_form {
   margin: 100px auto;
   background-color: transparent;
-  border-left: solid 5px crimson;
-  border-bottom: solid 5px crimson;
-  border-right: solid 5px crimson;
+  border-left: solid 5px purple;
+  border-bottom: solid 5px purple;
+  border-right: solid 5px purple;
   border-radius: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -51,6 +51,16 @@ body {
   width: 250px;
   padding: 10px;
   padding-bottom: 0;
+}
+
+.form_contents {
+  margin-top: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 label {
@@ -73,15 +83,15 @@ label {
   margin-bottom: 30px;
   display: block;
   border-radius: 3px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
 
 #uname:hover, #pwd:hover {
   background-color: white;
-  border-left: 3px solid crimson;
+  border-left: 3px solid purple;
   height: 35px;
   font-family: cursive;
 }
@@ -98,8 +108,8 @@ label {
 }
 
 .logger #login {
-  background-color: crimson;
-  color: white;
+  background-color: purple;
+  color: wheat;
   font-weight: bold;
   padding: 10px;
   margin: 20px;
