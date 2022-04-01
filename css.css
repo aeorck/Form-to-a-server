@@ -11,7 +11,7 @@ body {
 
 #head {
   background-color: crimson;
-  font-family: 'Alumni Sans Inline One', cursive;
+  font-family: "Alumni Sans Inline One", cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,9 +38,10 @@ body {
 #d_form {
   margin: 100px auto;
   background-color: transparent;
-  border-left: solid 3px crimson;
-  border-right: solid 3px crimson;
-  border-radius: 5px;
+  border-left: solid 5px crimson;
+  border-bottom: solid 5px crimson;
+  border-right: solid 5px crimson;
+  border-radius: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -49,44 +50,66 @@ body {
       align-self: center;
   width: 250px;
   padding: 10px;
+  padding-bottom: 0;
 }
 
 label {
   display: block;
   margin: 10px;
-  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5px;
+  font-family: sans-serif;
   font-weight: bolder;
 }
 
-#uname, #pwd {
-  background-color: #dbd8d8;
+#uname,
+#pwd {
+  background-color: #f1ebeb;
   border: none;
+  color: black;
   width: 200px;
   height: 30px;
-  margin-left: 5px;
+  margin-left: 10px;
   padding-left: 5px;
   margin-bottom: 30px;
   display: block;
+  border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 #uname:hover, #pwd:hover {
   background-color: white;
   border-left: 3px solid crimson;
-  -webkit-transition: all;
-  transition: all;
-  -webkit-animation: both 2s;
-          animation: both 2s;
+  height: 35px;
+  font-family: cursive;
 }
 
-#login {
+.logger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.logger #login {
   background-color: crimson;
   color: wheat;
   font-weight: bold;
-  padding: 5px;
-  margin: 30px;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 5px;
   margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: none;
+  font-family: sans-serif;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=css.css.map */
