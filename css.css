@@ -73,8 +73,8 @@ label {
   margin-bottom: 30px;
   display: block;
   border-radius: 3px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
 }
@@ -99,7 +99,7 @@ label {
 
 .logger #login {
   background-color: crimson;
-  color: wheat;
+  color: white;
   font-weight: bold;
   padding: 10px;
   margin: 20px;
