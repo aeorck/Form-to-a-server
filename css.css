@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,23 +11,17 @@ body {
 #head {
   background-color: purple;
   font-family: "Alumni Sans Inline One", cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 10px auto;
 }
-
 #head .home {
   background-color: rgba(128, 0, 128, 0.5);
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  flex: auto;
+  flex-wrap: wrap;
   padding-left: 15px;
   padding: 10px;
   text-transform: uppercase;
@@ -39,7 +32,7 @@ body {
 a {
   color: white;
   text-decoration: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-left: 10px;
 }
 
@@ -50,27 +43,18 @@ a {
   border-bottom: solid 5px purple;
   border-right: solid 5px purple;
   border-radius: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-content: center;
+  align-self: center;
   width: 250px;
   padding: 10px;
   padding-bottom: 0;
 }
-
 #d_form .form_contents {
   margin-top: 50px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition: all 0.3s;
+  transition-delay: 2s;
+  transition-timing-function: ease-in-out;
 }
-
 #d_form label {
   display: block;
   margin: 10px;
@@ -81,9 +65,10 @@ a {
 
 #uname,
 #pwd {
-  background-color: #f1ebeb;
+  background-color: rgb(241, 235, 235);
   border: none;
   color: black;
+  font-family: cursive;
   width: 200px;
   height: 30px;
   margin-left: 10px;
@@ -91,86 +76,80 @@ a {
   margin-bottom: 30px;
   display: block;
   border-radius: 3px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition: all 0.3s ease;
+  transition-timing-function: ease-in-out;
 }
-
 #uname:hover,
 #pwd:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-left: 3px solid purple;
   height: 35px;
   font-family: cursive;
+  transition: all 0.3s ease-in-out;
 }
 
 .logger {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   margin-bottom: 0;
   padding: 0;
 }
-
 .logger #login {
   background-color: purple;
+  border: white solid 1px;
   color: white;
   font-weight: bold;
   padding: 10px;
   margin: 20px;
   margin-top: 5px;
-  margin-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border: none;
   font-family: sans-serif;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.logger #login:hover {
+  color: purple;
+  background-color: white;
+  border: purple solid 1px;
+  transition: all 0.3s ease-in;
 }
 
 #navgt {
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: 10px auto;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
 }
-
-#navgt a {
-  padding: 20px;
-}
-
-#navgt a:hover {
-  color: rgba(128, 0, 128, 0.5);
+#navgt .active {
   background-color: white;
+  color: purple;
 }
-
+#navgt a {
+  padding: 5px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+#navgt a:hover {
+  color: rgb(90, 7, 90);
+  background-color: white;
+  border-radius: 5%;
+  transition: all 0.3s ease;
+}
 #navgt a:active {
   background-color: white;
   color: purple;
 }
 
 .m_body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  flex: auto;
+  align-items: center;
+  align-content: flex-start;
 }
-
 .m_body .left-col {
   color: white;
   font-size: 30px;
@@ -178,52 +157,70 @@ a {
   margin: 5px;
   padding: 10px;
 }
-
 .m_body .left-col .info_profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
-.m_body .left-col .info_profile .pic {
-  width: 50px;
+.m_body .left-col .info_profile #pic {
+  width: 80px;
   border-radius: 50%;
 }
-
+.m_body .left-col .info_profile #pic .pic {
+  width: 80%;
+  border-radius: 50%;
+  color: red;
+}
 .m_body .left-col .info_profile .info {
   background-color: white;
   color: purple;
 }
-
 .m_body .left-col .info_profile .info:nth-of-type(even) {
   background-color: purple;
   color: white;
 }
 
+#upload {
+  background-color: white;
+  border-left: solid 2px purple;
+  padding: 10px;
+  margin: 5px;
+}
+#upload:only-of-type {
+  color: red;
+}
+
+#submit {
+  float: right;
+  color: purple;
+  border: solid 2px purple;
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 footer {
   background-color: purple;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 30px;
   margin-top: 30px;
 }
-
 footer a {
   color: white;
   font-weight: bold;
   text-decoration: none;
   margin-left: 10px;
 }
-
 footer a:first-child {
   margin-left: 0;
 }
-/*# sourceMappingURL=css.css.map */
+
+@media (max-width: 670px) {
+  #navgt {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
