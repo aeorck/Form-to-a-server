@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <title>Stinger Login</title>
-  </head>
 
-  <body>
-    <header id="head">
-      <div clas="head">
-        <div class="home">Stingerr.io</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css.css" />
+  <!-- <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&display=swap" rel="stylesheet" />
+  <title>Stinger Login</title>
+</head>
+
+<body>
+  <header id="head">
+    <div class="home">Stingerr.io</div>
+
+  </header>
+
+  <form id="d_form" action="server_here" method="post">
+    <div class="form_contents">
+      <div>
+        <label for="uname">Username</label>
+        <input type="text" name="uname" id="uname" required placeholder="Username" />
       </div>
-    </header>
 
-    <form id="d_form" action="send-to-server" method="post">
-      <div class="form_contents">
-        <div class="uname">
-          <label for="uname">Username</label>
-          <input
-            type="text"
-            name="uname"
-            id="uname"
-            required
-            placeholder="Username"
-          />
-        </div>
-
-        <div class="pwd">
-          <label for="pwd">Password</label>
-          <input
-            type="password"
-            name="pwd"
-            id="pwd"
-            required
-            placeholder="**********"
-          />
-        </div>
-
-        <div class="logger">
-          <input type="submit" value="Login" id="login" />
-        </div>
+      <div>
+        <label for="pwd">Password</label>
+        <input type="password" name="pwd" id="pwd" required placeholder="**********" />
       </div>
-    </form>
 
-    <!-- <footer>
-      <div class="foot">
-        <a href="./dashboard.html">Dashboard</a>
-        <a href="#head">Top</a>
+      <div class="logger">
+        <input type="submit" value="Login" id="login" />
       </div>
-    </footer> -->
-  </body>
+    </div>
+  </form>
+
+  <footer>
+    <div class="foot">
+      <!-- <a href="./dashboard.html">Dashboard</a> -->
+      <a href="#head">Top</a>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
