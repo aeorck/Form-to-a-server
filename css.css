@@ -207,7 +207,7 @@ footer {
 }
 footer a {
   color: white;
-  font-weight: bold;
+  font-weight: lighter;
   text-decoration: none;
   margin-left: 10px;
 }
@@ -225,4 +225,30 @@ footer a:first-child {
     flex-wrap: wrap;
     width: auto;
   }
-}
+
+  footer {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  footer a {
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+  }
+  footer a:first-child {
+    margin-left: 0;
+  }
+
+  #notification {
+    background-color: rgb(241, 211, 241);
+    border-bottom: 3px purple solid;
+    display: none;
+    position: absolute;
+    top: 150px;
+    right: 90px;
+    padding: 5px;
+  }
+}/*# sourceMappingURL=css.css.map */
