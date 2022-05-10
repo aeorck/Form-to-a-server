@@ -50,10 +50,20 @@ a {
   padding-bottom: 0;
 }
 #d_form .form_contents {
+  position: relative;
   margin-top: 50px;
   transition: all 0.3s;
   transition-delay: 2s;
   transition-timing-function: ease-in-out;
+}
+#d_form .form_contents #notification {
+  position: absolute;
+  background-color: rgb(241, 211, 241);
+  border-bottom: 3px purple solid;
+  display: none;
+  top: 20px;
+  right: 0;
+  padding: 5px;
 }
 #d_form label {
   display: block;
@@ -241,14 +251,4 @@ footer a:first-child {
   footer a:first-child {
     margin-left: 0;
   }
-
-  #notification {
-    background-color: rgb(241, 211, 241);
-    border-bottom: 3px purple solid;
-    display: none;
-    position: absolute;
-    top: 150px;
-    right: 90px;
-    padding: 5px;
-  }
-}/*# sourceMappingURL=css.css.map */
+}
